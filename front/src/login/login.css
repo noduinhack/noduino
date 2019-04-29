@@ -1,0 +1,105 @@
+#login-container {
+  text-align: center;
+  
+}
+
+.login-form{
+  min-height: 90vh;
+}
+
+#info{
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+  color:#979797;
+  font-size:20px
+}
+
+#info p{
+  margin:0;
+  font-size:40px;
+}
+
+.buttonLogin{
+  border:none;
+  background-color: #F47A23;
+  color:white
+}
+
+#login{
+  width: 500px;
+  margin: auto;
+}
+
+#login .link{
+  margin-top: 20px;
+  display: inline-block;
+  color:#F47A23;  
+  text-decoration: none;
+  text-align: right;
+}
+
+#login .input-field{
+  display: flex;
+  justify-content: space-between;
+}
+
+#login label{
+  color: #fff;
+  display: inline-block;
+  font-weight: 700;
+}
+
+#login input{
+  color: #fff;
+  height: 20px;
+  margin-bottom: 15px;
+  display: inline-block;
+  font-size: 1.1em;
+}
+
+.buttonHelp{
+  background-color:#979797; 
+  color:white; 
+  border:none
+}
+
+#login{
+  display: flex;
+  flex-direction: column;
+  margin-top:40px;
+ 
+}
+
+#login button{
+  margin-left: 10px;
+  width:130px;
+  height: 40px
+}
+
+
+#login label, h1{
+  color:#F47A23
+}
+
+#login-container h1{
+  padding-top:30px;
+  font-size: 4em
+}
+
+
+#login input{
+  border: 1px solid #979797;
+  width:320px;
+  height: 25px;
+  margin-left:5px;
+  background:#494746;
+  opacity: 0.7
+} 
+
+#login .login-buttons{
+  display: flex;
+  justify-content: flex-end;
+}
+

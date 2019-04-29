@@ -1,0 +1,352 @@
+.noduino-title{
+  color: #F5F5F5;
+  font-size: 3em;
+  font-weight: 700;
+  margin: 0;
+}
+
+.header-column{
+  border-bottom: 4px solid #494746;
+}
+
+.section-column{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section-title{
+  color: #F5F5F5;
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.speed-title{
+  color: #fff;
+  font-size: 1.2em;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-weight: 700;
+  text-align: center;
+}
+
+
+.status{
+  text-align: right;
+  font-weight: 700;
+
+
+}
+
+.controls{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  touch-action: none;
+}
+.controls-up-down{
+  height: 244px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 8px;
+}
+
+.controls .control{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.control-up{
+  width: 0;
+height: 0;
+border-style: solid;
+border-width: 0 45px 55px 45px;
+border-color: transparent transparent #f47a23 transparent;
+}
+
+.control-down{
+  width: 0;
+height: 0;
+border-style: solid;
+border-width: 55px 45px 0 45px;
+border-color: #f47a23 transparent transparent transparent;
+
+}
+
+.control-left{
+  width: 0;
+height: 0;
+border-style: solid;
+border-width: 45px 55px 45px 0;
+border-color: transparent #f47a23 transparent transparent;
+}
+
+.control-right{
+  width: 0;
+height: 0;
+border-style: solid;
+border-width: 45px 0 45px 55px;
+border-color: transparent transparent transparent #f47a23;
+
+}
+
+
+.controls .controls-up-down .control{
+  height: 69px;;
+}
+
+.warning-container{
+  width: 72px;
+}
+
+.warning-text{
+  margin-left: 10px;
+  text-align: center;
+}
+
+.warning-text h4{
+  font-size: 2em;
+}
+
+.warning-text p{
+  font-size: 1.4em;
+}
+
+.metal-detected-box{
+  visibility: hidden;
+  margin-top: 50px;
+  background-color: #494746;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.metal-detected-box.detected{ 
+  visibility: visible;
+  color: #fff;
+}
+
+.speed{
+  margin-bottom: 20px;
+}
+
+.slider{
+width: 216px;
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+  margin: 9px 0;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  box-shadow: 0px 0px 0.1px #000000, 0px 0px 0px #0d0d0d;
+  background: rgba(151, 151, 151, 0.78);
+  border-radius: 0px;
+  border: 0px solid #010101;
+}
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px #000031, 0px 0px 0px #00004b;
+  border: 3px solid #f47a23;
+  height: 23px;
+  width: 23px;
+  border-radius: 50px;
+  background: #222222;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -9px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: rgba(164, 164, 164, 0.78);
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  box-shadow: 0px 0px 0.1px #000000, 0px 0px 0px #0d0d0d;
+  background: rgba(151, 151, 151, 0.78);
+  border-radius: 0px;
+  border: 0px solid #010101;
+}
+input[type=range]::-moz-range-thumb {
+  box-shadow: 0px 0px 0px #000031, 0px 0px 0px #00004b;
+  border: 3px solid #f47a23;
+  height: 23px;
+  width: 23px;
+  border-radius: 50px;
+  background: #222222;
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: rgba(138, 138, 138, 0.78);
+  border: 0px solid #010101;
+  border-radius: 0px;
+  box-shadow: 0px 0px 0.1px #000000, 0px 0px 0px #0d0d0d;
+}
+input[type=range]::-ms-fill-upper {
+  background: rgba(151, 151, 151, 0.78);
+  border: 0px solid #010101;
+  border-radius: 0px;
+  box-shadow: 0px 0px 0.1px #000000, 0px 0px 0px #0d0d0d;
+}
+input[type=range]::-ms-thumb {
+  box-shadow: 0px 0px 0px #000031, 0px 0px 0px #00004b;
+  border: 3px solid #f47a23;
+  height: 23px;
+  width: 23px;
+  border-radius: 50px;
+  background: #222222;
+  cursor: pointer;
+  height: 5px;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: rgba(151, 151, 151, 0.78);
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: rgba(164, 164, 164, 0.78);
+}
+
+
+.keyboard-controls{
+  margin-top: 20px;
+}
+
+.keyboard-controls li{
+  list-style: none;
+  padding-left: 10px;
+}
+
+.live-cam-container{
+  width: 320px;
+  margin: 8px 0;
+}
+.live-cam{
+  max-width: 100%
+}
+
+.controls-cam-up-down{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 8px;
+}
+
+.control-cam-up{
+  width: 0;
+height: 0;
+border-style: solid;
+border-width: 0 60px 19px 60px;
+border-color: transparent transparent #f47a23 transparent;
+}
+
+.control-cam-down{
+  width: 0;
+height: 0;
+border-style: solid;
+border-width: 19px 60px 0 60px;
+border-color: #f47a23 transparent transparent transparent;
+}
+
+.control-cam-left{
+  width: 0;
+height: 0;
+border-style: solid;
+border-width: 60px 19px 60px 0;
+border-color: transparent #f47a23 transparent transparent;
+
+}
+
+.control-cam-right{
+  width: 0;
+height: 0;
+border-style: solid;
+border-width: 60px 0 60px 19px;
+border-color: transparent transparent transparent #f47a23;
+
+}
+
+.snapshot-button, .record-button{
+  border: 1px solid #F47A23;
+  color: #F47A23;
+  padding: 10px 20px;
+  width: 240px;
+  display: block;
+  text-align: center;
+  margin: auto;
+  background: none;
+  font-size: 1em;
+}
+
+.snapshot-button{
+  margin-top: 20px;
+}
+
+.snapshot-button:hover, .record-button:hover{
+  color: #fff;
+  border-color: #fff;
+}
+
+.stop-record{
+  background-color: #F47A23;
+  color: #fff;
+}
+
+.stop-record:hover{
+  color: #F47A23;
+  background-color: #fff;
+}
+
+.path-info{
+  visibility: hidden;
+}
+
+.path-info.visible{
+  visibility: visible;
+}
+
+.path-info ul{
+  list-style: none;
+  color: #fff;
+  line-height: 2em;
+  font-size: 1.2em;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.page-footer{
+  margin-top: 40px;
+  border-top: 4px solid #494746;
+  color: #fff;
+  font-weight: 700;
+}
+
+.authors{
+  text-align: left;
+}
+
+.project{
+  text-align: right;
+}

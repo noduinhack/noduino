@@ -1,0 +1,109 @@
+.eachRobot{
+  width:300px;
+  height:220px;
+  background-color:#494746;
+  margin: 45px;
+  margin-top:10px;
+
+}
+
+.robotTitle{
+  background-color: #F47A23;
+  color:white;
+  padding:5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.offline .robotTitle{
+  background-color: #ccc;
+  color: #494746;
+}
+
+.robotTitle h2{
+  display: inline;
+  margin:0
+}
+
+.robotTitle p{
+  margin:0;
+  display: inline;
+  font-size:9px;
+}
+
+
+.robotImg{
+  padding-right: 5px;
+  width:200px;
+  height: 150px;
+}
+
+.robotImg img{
+  width: 100%;
+}
+
+.offline .robotImg img{
+  filter: grayscale(1);
+}
+
+
+.robotContent{
+  display:flex;
+  color:white;
+  padding:5px;
+  margin:0;
+  height:75%;
+}
+
+
+.robotContent h3{
+  margin:0;
+  margin-bottom:15px;
+}
+
+.robotContent p{
+  margin:0;
+  font-size:13px;
+}
+
+.robotInfo{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.robotInfo button{
+  background-color:#494746;
+  border-color: #F47A23;
+  color: #F47A23;
+  width: 157px;
+  height: 30px;
+  font-size: 20px;
+  margin-top:47px;
+  cursor: pointer;
+}
+
+.robotInfo button:hover{
+  background-color:#F47A23;
+  border-color: #494746;
+  color: #494746;
+
+}
+
+.offline button{
+  cursor: default;
+  border-color: #CCC;
+  color: #CCC;
+  background-color:#494746;
+}
+
+.offline button:hover{
+  border-color: #CCC;
+  color: #CCC;
+  background-color:#494746;
+}
+
+
+
+

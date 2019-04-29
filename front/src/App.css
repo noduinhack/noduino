@@ -1,0 +1,15 @@
+/* Canvas */
+
+ body{
+  background-color: #222222;
+  font-family: 'Montserrat', sans-serif;
+  min-height: 100vh;
+} 
+
+#container{
+  display: flex
+}
+
+
+/* Log In */
+
